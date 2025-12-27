@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: whitesmoke;
+            overflow: hidden;
+        }
+        a{
+            font-family: 'Courier New', Courier, monospace;
+            color: blue;
+        }
+        .info{
+            display: grid;
+            padding: 2rem;
+            gap: 2rem;
+        }
+        .my{
+            display: flex;
+            background-color: white;
+            box-shadow: 5px 5px 15px rgb(221, 218, 218);
+            gap: 1rem;
+            padding: 8px;
+            align-items: center;
+            width: fit-content;
+            border-radius: 20px;
+        }
+        .services{
+            display: flex;
+            gap: 3%;
+            width: 100vw;
+            height: fit-content;
+            justify-content: center;
+            padding: 2%;
+            padding-bottom: 2rem;
+        }
+        h5,h3,p{
+            background-color: white;
+        }
+        .service{
+            background-color: white;
+            padding-left: 8px;
+            padding-top: 4px;
+            border-radius: 12px;
+            box-shadow: 3px 3px 1px rgb(202, 201, 201);
+            width: 20%;
+            height: 7rem;
+        }
+        .service:hover{
+            transform: scale(1);
+            transition-duration: 500ms;
+            box-shadow: 10px 10px 10px grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Services</h1>
+    <a href="index.html">Back</a>
+    <div class="info">
+        <div class="my">
+            <h3>Member 2:</h3>
+            <p>Samwel Gervas Sikanyika</p>
+        </div>
+        <div class="my">
+            <h3>Reg. No:</h3>
+            <p>2023-04-12844</p>
+        </div>
+    </div>
+
+    <h4>Services Offered</h4>
+    <div class="services">
+        <div class="service">
+            <h5>Service 01</h5>
+        </div>
+        <div class="service">
+           <h5>Service 02</h5> 
+        </div>
+        <div class="service">
+            <h5>Service 03</h5> 
+        </div>
+        <div class="service">
+            <h5>Service 04</h5> 
+
+        </div>
+    </div>
+</body>
+</html>
