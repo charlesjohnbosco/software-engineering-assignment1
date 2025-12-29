@@ -1,9 +1,273 @@
 <!DOCTYPE html>
-<html>
-<head><title>Products</title></head>
-<body>
-    <h1>Products Page</h1>
-    <p>Created by Augustino (Member 9)</p>
-    <a href="index.html">Back to Home</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Team Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-orange-50 to-amber-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Navigation -->
+        <nav class="mb-8">
+            <a href="index.html" class="inline-flex items-center text-orange-600 hover:text-orange-800 font-medium">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Home
+            </a>
+        </nav>
+
+        <div class="max-w-6xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-4">
+                    <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mr-2">9</div>
+                    <span class="font-semibold">Augustino • Products Page</span>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Our Products</h1>
+                <p class="text-gray-600 text-lg">Premium solutions for modern development teams</p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all border-2 border-orange-200">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-amber-400 rounded-full mx-auto mb-6 flex items-center justify-center text-white">
+                            <i class="fas fa-rocket text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Starter Plan</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-gray-800">$49</span>
+                            <span class="text-gray-500">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-left">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>5 Team Members</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>10 Projects</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Basic Git Tools</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Email Support</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition-all">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 (Featured) -->
+                <div class="bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl shadow-xl overflow-hidden transform scale-105 relative">
+                    <div class="absolute top-4 right-4 bg-white text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">
+                        Most Popular
+                    </div>
+                    <div class="p-8 text-center text-white">
+                        <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i class="fas fa-crown text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Pro Plan</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$99</span>
+                            <span class="opacity-80">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-left">
+                            <li class="flex items-center">
+                                <i class="fas fa-check mr-3"></i>
+                                <span>Unlimited Team Members</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check mr-3"></i>
+                                <span>Unlimited Projects</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check mr-3"></i>
+                                <span>Advanced Git Tools</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check mr-3"></i>
+                                <span>Priority Support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check mr-3"></i>
+                                <span>Analytics Dashboard</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-white text-orange-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all">
+                            Try Free for 14 Days
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all border-2 border-gray-200">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-gray-600 to-gray-400 rounded-full mx-auto mb-6 flex items-center justify-center text-white">
+                            <i class="fas fa-building text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Enterprise</h3>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-gray-800">Custom</span>
+                            <div class="text-gray-500">pricing</div>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-left">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Everything in Pro</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Custom Integrations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Dedicated Manager</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>On-premise Deployment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>SLA 99.9% Uptime</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-900 transition-all">
+                            Contact Sales
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Comparison -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Feature Comparison</h2>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b-2 border-gray-200">
+                                <th class="text-left py-4 text-gray-700 font-semibold">Features</th>
+                                <th class="text-center py-4 text-orange-600 font-semibold">Starter</th>
+                                <th class="text-center py-4 text-amber-600 font-semibold">Pro</th>
+                                <th class="text-center py-4 text-gray-700 font-semibold">Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 text-gray-700">Team Members</td>
+                                <td class="text-center py-4">Up to 5</td>
+                                <td class="text-center py-4">Unlimited</td>
+                                <td class="text-center py-4">Unlimited</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 text-gray-700">Git Projects</td>
+                                <td class="text-center py-4">10</td>
+                                <td class="text-center py-4">Unlimited</td>
+                                <td class="text-center py-4">Unlimited</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 text-gray-700">Storage</td>
+                                <td class="text-center py-4">10GB</td>
+                                <td class="text-center py-4">100GB</td>
+                                <td class="text-center py-4">1TB+</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 text-gray-700">Support</td>
+                                <td class="text-center py-4">Email</td>
+                                <td class="text-center py-4">Priority 24/7</td>
+                                <td class="text-center py-4">Dedicated</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 text-gray-700">Integrations</td>
+                                <td class="text-center py-4">Basic</td>
+                                <td class="text-center py-4">Advanced</td>
+                                <td class="text-center py-4">Custom</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 text-gray-700">Analytics</td>
+                                <td class="text-center py-4">Basic</td>
+                                <td class="text-center py-4">Advanced</td>
+                                <td class="text-center py-4">Enterprise</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">What Our Users Say</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 font-bold mr-4">
+                                AJ
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-800">Alex Johnson</div>
+                                <div class="text-sm text-gray-500">CTO, TechStart Inc.</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"The Pro plan transformed our team's workflow. We reduced merge conflicts by 80%."</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-800 font-bold mr-4">
+                                MS
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-800">Maria Santos</div>
+                                <div class="text-sm text-gray-500">Lead Developer</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Enterprise solution gave us the custom tools we needed for our unique workflow."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="bg-orange-50 rounded-2xl p-8 mb-10">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-question-circle text-orange-600 mr-3"></i>
+                    Frequently Asked Questions
+                </h3>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Can I switch plans later?</h4>
+                        <p class="text-gray-600 text-sm">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Is there a free trial?</h4>
+                        <p class="text-gray-600 text-sm">The Pro plan offers a 14-day free trial. No credit card required for the trial period.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Do you offer discounts for students?</h4>
+                        <p class="text-gray-600 text-sm">Yes, we offer 50% discount for verified students and educational institutions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center">
+                <a href="index.html" class="inline-flex items-center bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition-all font-semibold shadow-lg">
+                    <i class="fas fa-home mr-2"></i> Return to Homepage
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-10 text-gray-500 text-sm">
+                <p><i class="fas fa-git-alt mr-1"></i> Branch: augustino-tailwind-products • Member: Augustino • Products Section</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
