@@ -1,9 +1,114 @@
 <!DOCTYPE html>
-<html>
-<head><title>About</title></head>
-<body>
-    <h1>About Page</h1>
-    <p>Created by Samwel (Member 1)</p>
-    <a href="index.html">Back to Home</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Team Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-cyan-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Navigation -->
+        <nav class="mb-8">
+            <a href="index.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Home
+            </a>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="max-w-4xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-10">
+                <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full mb-4">
+                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-2">1</div>
+                    <span class="font-semibold">Samwel • About Page</span>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">About Our Project</h1>
+                <p class="text-gray-600 text-lg">Discover the story behind our collaborative Git project</p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <!-- Mission Section -->
+                <div class="mb-10">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-bullseye text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-800">Our Mission</h2>
+                            <p class="text-gray-600">Creating excellence through collaboration</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        This collaborative project demonstrates modern Git workflows in software development. 
+                        We aim to showcase how distributed teams can work effectively using version control 
+                        systems while building a functional, responsive web application.
+                    </p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid md:grid-cols-2 gap-6 mb-10">
+                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                        <div class="text-blue-600 mb-3">
+                            <i class="fas fa-code-branch text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Git Workflow</h3>
+                        <p class="text-gray-700">Professional branching strategy with feature-based development</p>
+                    </div>
+                    
+                    <div class="bg-cyan-50 p-6 rounded-xl border border-cyan-100">
+                        <div class="text-cyan-600 mb-3">
+                            <i class="fas fa-mobile-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Responsive Design</h3>
+                        <p class="text-gray-700">Mobile-first approach ensuring accessibility across all devices</p>
+                    </div>
+                </div>
+
+                <!-- Team Info -->
+                <div class="bg-gray-50 p-6 rounded-xl mb-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-users mr-3 text-blue-600"></i>
+                        Team Structure
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+                        <div class="text-center">
+                            <div class="bg-blue-100 text-blue-800 rounded-lg py-2 font-semibold">Charles</div>
+                            <div class="text-xs text-gray-600 mt-1">Leader</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-50 text-gray-700 rounded-lg py-2">Samwel</div>
+                            <div class="text-xs text-gray-600 mt-1">About</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-50 text-gray-700 rounded-lg py-2">Sikanyika</div>
+                            <div class="text-xs text-gray-600 mt-1">Services</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-50 text-gray-700 rounded-lg py-2">Gasper</div>
+                            <div class="text-xs text-gray-600 mt-1">Contact</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-50 text-gray-700 rounded-lg py-2">+5 more</div>
+                            <div class="text-xs text-gray-600 mt-1">Team</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back Button -->
+                <div class="text-center pt-6 border-t border-gray-200">
+                    <a href="index.html" class="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-all font-semibold">
+                        <i class="fas fa-home mr-2"></i> Return to Homepage
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-8 text-gray-500 text-sm">
+                <p><i class="fas fa-git-alt mr-1"></i> Branch: samwel-tailwind-about • Member: Samwel • About Section</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
