@@ -3,87 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            background-color: whitesmoke;
-            overflow: hidden;
-        }
-        a{
-            font-family: 'Courier New', Courier, monospace;
-            color: blue;
-        }
-        .info{
-            display: grid;
-            padding: 2rem;
-            gap: 2rem;
-        }
-        .my{
-            display: flex;
-            background-color: white;
-            box-shadow: 5px 5px 15px rgb(221, 218, 218);
-            gap: 1rem;
-            padding: 8px;
-            align-items: center;
-            width: fit-content;
-            border-radius: 20px;
-        }
-        .services{
-            display: flex;
-            gap: 3%;
-            width: 100vw;
-            height: fit-content;
-            justify-content: center;
-            padding: 2%;
-            padding-bottom: 2rem;
-        }
-        h5,h3,p{
-            background-color: white;
-        }
-        .service{
-            background-color: white;
-            padding-left: 8px;
-            padding-top: 4px;
-            border-radius: 12px;
-            box-shadow: 3px 3px 1px rgb(202, 201, 201);
-            width: 20%;
-            height: 7rem;
-        }
-        .service:hover{
-            transform: scale(1);
-            transition-duration: 500ms;
-            box-shadow: 10px 10px 10px grey;
-        }
-    </style>
+    <title>Our Services | Team Project</title>
+    <script src=https://cdn.tailwindcss.com></script>
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css rel="stylesheet">
 </head>
-<body>
-    <h1>Services</h1>
-    <a href="index.html">Back</a>
-    <div class="info">
-        <div class="my">
-            <h3>Member 2:</h3>
-            <p>Samwel Gervas Sikanyika</p>
-        </div>
-        <div class="my">
-            <h3>Reg. No:</h3>
-            <p>2023-04-12844</p>
-        </div>
-    </div>
+<body class="bg-gradient-to-br from-emerald-50 to-green-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <nav class="mb-8">
+            <a href="index.html" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 font-medium">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Home
+            </a>
+        </nav>
 
-    <h4>Services Offered</h4>
-    <div class="services">
-        <div class="service">
-            <h5>Service 01</h5>
-        </div>
-        <div class="service">
-           <h5>Service 02</h5> 
-        </div>
-        <div class="service">
-            <h5>Service 03</h5> 
-        </div>
-        <div class="service">
-            <h5>Service 04</h5> 
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full mb-4">
+                    <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold mr-2">2</div>
+                    <span class="font-semibold">Sikanyika • Services Page</span>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Our Premium Services</h1>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">Professional solutions for modern development teams</p>
+            </div>
 
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-2xl shadow-lg p-6 border border-emerald-100 hover:border-emerald-300 transition-all">
+                    <div class="w-14 h-14 bg-emerald-500 rounded-xl flex items-center justify-center text-white mb-4">
+                        <i class="fas fa-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Web Development</h3>
+                    <p class="text-gray-600 mb-4">Custom web applications built with modern frameworks and best practices.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-semibold text-emerald-600">Starting at 1M</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full">Popular</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-6 border border-blue-100 hover:border-blue-300 transition-all">
+                    <div class="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center text-white mb-4">
+                        <i class="fab fa-git-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Git Consultation</h3>
+                    <p class="text-gray-600 mb-4">Team workflow setup, branching strategies, and collaboration optimization.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-semibold text-blue-600">Tsh. 250,000/month</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">New</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-6 border border-purple-100 hover:border-purple-300 transition-all">
+                    <div class="w-14 h-14 bg-purple-500 rounded-xl flex items-center justify-center text-white mb-4">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Team Training</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive Git and GitHub training for development teams of all sizes.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-semibold text-purple-600">Tsh.100,000/person</span>
+                        <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Bestseller</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                    Why Choose Our Services?
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 mr-4">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Expert Team</h4>
+                            <p class="text-gray-600 text-sm">Seasoned professionals with 5+ years of experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 mr-4">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Fast Delivery</h4>
+                            <p class="text-gray-600 text-sm">Quick turnaround without compromising quality</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 mr-4">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">24/7 Support</h4>
+                            <p class="text-gray-600 text-sm">Round-the-clock technical assistance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 mr-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Quality Guarantee</h4>
+                            <p class="text-gray-600 text-sm">100% satisfaction or your money back</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="index.html" class="inline-flex items-center bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 transition-all font-semibold shadow-lg">
+                    <i class="fas fa-home mr-2"></i> Return to Homepage
+                </a>
+            </div>
+
+
+            <div class="text-center mt-10 text-gray-500 text-sm">
+                <p><i class="fas fa-git-alt mr-1"></i> Branch: sikanyika-tailwind-services • Member: Sikanyika • Services Section</p>
+            </div>
         </div>
     </div>
 </body>
