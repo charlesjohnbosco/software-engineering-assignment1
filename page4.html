@@ -1,9 +1,183 @@
 <!DOCTYPE html>
-<html>
-    <head><title>Gallery</title></head>
-    <body>
-        <h1>Gallery Page</h1>
-        <p>Created by Dominic (Member 4)</p>
-        <a href="index.html">Back to Home</a>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery | Team Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-amber-50 to-orange-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Navigation -->
+        <nav class="mb-8">
+            <a href="index.html" class="inline-flex items-center text-amber-600 hover:text-amber-800 font-medium">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Home
+            </a>
+        </nav>
+
+        <div class="max-w-6xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center bg-amber-100 text-amber-800 px-4 py-2 rounded-full mb-4">
+                    <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold mr-2">4</div>
+                    <span class="font-semibold">Dominic • Gallery Page</span>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Project Gallery</h1>
+                <p class="text-gray-600 text-lg">Visual showcase of our collaborative work and milestones</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap gap-3 justify-center mb-10">
+                <button class="px-5 py-2 bg-amber-600 text-white rounded-full font-medium">All Projects</button>
+                <button class="px-5 py-2 bg-white text-gray-700 border border-gray-300 rounded-full hover:bg-gray-50">Web Design</button>
+                <button class="px-5 py-2 bg-white text-gray-700 border border-gray-300 rounded-full hover:bg-gray-50">Git Workflow</button>
+                <button class="px-5 py-2 bg-white text-gray-700 border border-gray-300 rounded-full hover:bg-gray-50">Teamwork</button>
+                <button class="px-5 py-2 bg-white text-gray-700 border border-gray-300 rounded-full hover:bg-gray-50">UI/UX</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
+                            Featured
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Git Collaboration Hub</h3>
+                        <p class="text-gray-600 mb-4">Central dashboard for team coordination and branch management</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Git</span>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">React</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-emerald-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Branch Visualizer</h3>
+                        <p class="text-gray-600 mb-4">Interactive tool for visualizing Git branches and merges</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">JavaScript</span>
+                            <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">D3.js</span>
+                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded">SVG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
+                            New
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Team Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Real-time progress tracking for collaborative projects</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Vue.js</span>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Firebase</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">WebSockets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-red-400 to-orange-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Code Review Portal</h3>
+                        <p class="text-gray-600 mb-4">Streamlined interface for peer code reviews</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">TypeScript</span>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Node.js</span>
+                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-indigo-400 to-blue-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Merge Conflict Resolver</h3>
+                        <p class="text-gray-600 mb-4">Visual tool for resolving Git merge conflicts</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Git API</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">WebAssembly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-teal-400 to-cyan-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all"></div>
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
+                            Popular
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Version History Browser</h3>
+                        <p class="text-gray-600 mb-4">Explore project evolution through interactive timeline</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">GraphQL</span>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Redis</span>
+                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded">Canvas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-amber-600 mb-2">24+</div>
+                        <div class="text-gray-600">Projects Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-amber-600 mb-2">10</div>
+                        <div class="text-gray-600">Team Members</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-amber-600 mb-2">150+</div>
+                        <div class="text-gray-600">Git Commits</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center">
+                <a href="index.html" class="inline-flex items-center bg-amber-600 text-white px-8 py-3 rounded-lg hover:bg-amber-700 transition-all font-semibold shadow-lg">
+                    <i class="fas fa-home mr-2"></i> Return to Homepage
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-10 text-gray-500 text-sm">
+                <p><i class="fas fa-git-alt mr-1"></i> Branch: dominic-tailwind-gallery • Member: Dominic • Gallery Section</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
+
+
+
+
