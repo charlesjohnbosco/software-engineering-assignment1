@@ -1,9 +1,228 @@
 <!DOCTYPE html>
-<html>
-<head><title>Blog</title></head>
-<body>
-    <h1>Blog Page</h1>
-    <p>Created by Sirily (Member 7)</p>
-    <a href="index.html">Back to Home</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Team Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-rose-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Navigation -->
+        <nav class="mb-8">
+            <a href="index.html" class="inline-flex items-center text-pink-600 hover:text-pink-800 font-medium">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Home
+            </a>
+        </nav>
+
+        <div class="max-w-6xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center bg-pink-100 text-pink-800 px-4 py-2 rounded-full mb-4">
+                    <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-2">7</div>
+                    <span class="font-semibold">Sirily • Blog Page</span>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Project Blog</h1>
+                <p class="text-gray-600 text-lg">Updates, insights, and lessons from our Git collaboration journey</p>
+            </div>
+
+            <!-- Featured Post -->
+            <div class="bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl shadow-xl p-8 text-white mb-12">
+                <div class="max-w-2xl">
+                    <span class="bg-white/30 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Featured</span>
+                    <h2 class="text-3xl font-bold mb-4">Mastering Git Collaboration: Our Team's Journey</h2>
+                    <p class="opacity-90 mb-6">How 10 students successfully managed a complex Git project with zero merge conflicts.</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Sirily</div>
+                            <div class="text-sm opacity-80">November 15, 2024 • 5 min read</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Post 1 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-cyan-400 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
+                            Git Tips
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded mr-3">Tutorial</span>
+                            <span>Nov 10, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-pink-600 transition-colors">
+                            Branching Strategies for Teams
+                        </h3>
+                        <p class="text-gray-600 mb-4">Learn how to effectively manage multiple feature branches without conflicts.</p>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-800 text-sm font-bold mr-3">
+                                S
+                            </div>
+                            <span class="text-gray-700 font-medium">Samwel</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-emerald-400 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
+                            Web Dev
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded mr-3">Guide</span>
+                            <span>Nov 8, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-pink-600 transition-colors">
+                            Responsive Design with Tailwind
+                        </h3>
+                        <p class="text-gray-600 mb-4">Building mobile-first websites using utility-first CSS framework.</p>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center text-green-800 text-sm font-bold mr-3">
+                                SI
+                            </div>
+                            <span class="text-gray-700 font-medium">Sikanyika</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-400 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
+                            Teamwork
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded mr-3">Case Study</span>
+                            <span>Nov 5, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-pink-600 transition-colors">
+                            Effective Code Reviews
+                        </h3>
+                        <p class="text-gray-600 mb-4">How our team implemented productive code review sessions.</p>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center text-purple-800 text-sm font-bold mr-3">
+                                G
+                            </div>
+                            <span class="text-gray-700 font-medium">Gasper</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-amber-400 to-orange-400 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
+                            Design
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="bg-amber-100 text-amber-800 px-2 py-1 rounded mr-3">Inspiration</span>
+                            <span>Nov 3, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-pink-600 transition-colors">
+                            Modern Web Aesthetics
+                        </h3>
+                        <p class="text-gray-600 mb-4">Creating visually appealing interfaces that enhance user experience.</p>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-amber-800 text-sm font-bold mr-3">
+                                D
+                            </div>
+                            <span class="text-gray-700 font-medium">Dominic</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-red-400 to-rose-400 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
+                            Leadership
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded mr-3">Insights</span>
+                            <span>Nov 1, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-pink-600 transition-colors">
+                            Managing Remote Collaboration
+                        </h3>
+                        <p class="text-gray-600 mb-4">Strategies for leading distributed development teams effectively.</p>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center text-red-800 text-sm font-bold mr-3">
+                                E
+                            </div>
+                            <span class="text-gray-700 font-medium">Ezekiel</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-indigo-400 to-violet-400 relative overflow-hidden">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
+                            Q&A
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded mr-3">FAQ</span>
+                            <span>Oct 28, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-pink-600 transition-colors">
+                            Common Git Challenges Solved
+                        </h3>
+                        <p class="text-gray-600 mb-4">Answers to frequent Git problems encountered by beginners.</p>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-800 text-sm font-bold mr-3">
+                                V
+                            </div>
+                            <span class="text-gray-700 font-medium">Valentine</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-10 text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Stay Updated</h2>
+                <p class="text-gray-600 mb-6 max-w-md mx-auto">Subscribe to get notifications about new blog posts and project updates.</p>
+                <div class="max-w-md mx-auto flex gap-3">
+                    <input type="email" placeholder="Your email address" 
+                           class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                    <button class="bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-pink-700 transition-all">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center">
+                <a href="index.html" class="inline-flex items-center bg-pink-600 text-white px-8 py-3 rounded-lg hover:bg-pink-700 transition-all font-semibold shadow-lg">
+                    <i class="fas fa-home mr-2"></i> Return to Homepage
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <div class="text-center mt-10 text-gray-500 text-sm">
+                <p><i class="fas fa-git-alt mr-1"></i> Branch: sirily-tailwind-blog • Member: Sirily • Blog Section</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
